@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: bisque;
+}
+
+footer a {
+    font-size: 100%;
+    color: white;
+    background-color: bisque;
+}
+
+footer ul{
+    color: rgb(255, 184, 96);
+}

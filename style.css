@@ -1,0 +1,53 @@
+@import url('Composants/footer.css');
+@import url('Composants/nav.css');
+@import url('Composants/projet.css');
+@import url('Composants/titre.css');
+
+*{
+    background-color: bisque;
+}
+.dark{
+    background-color: black;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(177, 182, 238);
+}
+
+.rainbow {
+    animation: rainbowColor 15s ease infinite;
+}
+
+@keyframes rainbowColor{
+    0% {
+        color: red;
+    }
+    15%{
+        color: orange;
+    }
+    20%{
+        color: yellow;
+    }
+    25%{
+        color: greenyellow;
+    }
+    30%{
+        color: green;
+    }
+    35%{
+        color: blue;
+    }
+    40%{
+        color: darkblue;
+    }
+    45%{
+        color: indigo;
+    }
+    100%{
+        color: violet;
+    }
+}

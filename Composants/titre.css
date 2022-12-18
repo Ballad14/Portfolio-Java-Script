@@ -1,0 +1,38 @@
+.titre{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.titreV2{
+    color: rgb(255, 184, 96);
+    text-align: center;
+}
+
+.titreV3{
+    font-size: 200%;
+    color: white;
+    text-align: left;
+    margin-left: 40%;
+}
+
+.titreV4{
+    font-size: 200%;
+    color: white;
+    text-align: left;
+    margin-left: 45%;
+}
+
+.titreV5{
+    font-size: 200%;
+    color: white;
+    text-align: left;
+    margin-left: 46%;
+}
+
+.titrePage{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 400%;
+}
