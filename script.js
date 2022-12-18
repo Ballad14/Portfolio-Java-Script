@@ -140,3 +140,27 @@ button.addEventListener("click", function() {
 }  
 })
 
+const bouton = document.querySelector("#bouton");
+const movieList = []
+
+movieList [0] = "James Bond"
+movieList [1] = "Le silence des agneaux"
+movieList [2] = "Indiana Jones"
+movieList [3] = "Star Wars"
+movieList [4] = "Avatar"
+movieList [5] = "Avengers Endgame"
+movieList [6] = "Mission Impossible"
+movieList [7] = "Les Traducteurs"
+movieList [8] = "2012"
+movieList [9] = "A star is born"
+
+
+bouton.addEventListener("click", function() {
+    let index = Math.floor(Math.random() * 10)
+  const liste = document.querySelector("#liste");
+  const li = document.createElement("li");
+  const text = document.createTextNode(movieList[index]);
+  
+  li.appendChild(text);
+  liste.appendChild(li);  
+})

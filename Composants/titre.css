@@ -1,37 +1,37 @@
 .titre{
-    color: white;
+    color: rgb(40, 11, 105);
     text-decoration: underline;
     text-align: center;
 }
 
 .titreV2{
-    color: rgb(255, 184, 96);
+    color: rgb(255, 153, 29);
     text-align: center;
 }
 
 .titreV3{
     font-size: 200%;
-    color: white;
+    color: rgb(40, 11, 105);
     text-align: left;
     margin-left: 40%;
 }
 
 .titreV4{
     font-size: 200%;
-    color: white;
+    color: rgb(40, 11, 105);
     text-align: left;
     margin-left: 45%;
 }
 
 .titreV5{
     font-size: 200%;
-    color: white;
+    color: rgb(40, 11, 105);
     text-align: left;
     margin-left: 46%;
 }
 
 .titrePage{
-    color: white;
+    color: rgb(40, 11, 105);
     text-decoration: underline;
     text-align: center;
     font-size: 400%;

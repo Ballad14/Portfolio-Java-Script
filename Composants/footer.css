@@ -7,10 +7,10 @@ footer{
 
 footer a {
     font-size: 100%;
-    color: white;
+    color: rgb(40, 11, 105);
     background-color: bisque;
 }
 
 footer ul{
-    color: rgb(255, 184, 96);
+    color:rgb(255, 153, 29);
 }
