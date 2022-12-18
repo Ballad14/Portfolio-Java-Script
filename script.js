@@ -1,21 +1,14 @@
+/*
 const NightMode = document.querySelector("#night")
 
-/*
+const body = document.querySelector("body")
+
 NightMode.addEventListener("click",function() {
-    body.style.backgroundColor = "dark";
+    if (body.className == "light") {
+        body.classList.toggle = "dark" 
+    }
 })
 */
-
-NightMode.addEventListener("click",function() {
-    if (body.style.backgroundColor == "light") {
-        body.style.backgroundColor = "dark" 
-    }
-    else {
-        body.style.backgroundColor = "light"
-    }
-
-})
-
 
 const grp_img = document.querySelector("#grp_img")
 const projet = []
@@ -38,9 +31,39 @@ document.addEventListener("keypress",enter =>{
     }
 })
 
-const lumière = document.querySelector("#lumière")
-
 /*
+
+const next = document.querySelector("#Next")
+const lumière = document.querySelector("#imgLumière")
+
+next.addEventListener("click", function(){
+    if (lumière.src === "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Structure%20Lumi%C3%A8re.png"){
+        lumière.src = "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Mod%C3%A9lisation%20Lumi%C3%A8re.png"
+    }
+    else if (lumière.src === "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Mod%C3%A9lisation%20Lumi%C3%A8re.png"){
+        lumière.src = "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Lumi%C3%A8re%20textur%C3%A9.png"
+    }
+    else {
+        lumière.src = "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Structure%20Lumi%C3%A8re.png"
+    }
+})
+
+const imgLumière = document.querySelector("#imgLumière")
+const lumière = []
+
+lumière[0] = "Images/3D/Lumière/Structure Lumière.png"
+lumière[1] = "Images/3D/Lumière/Modélisation Lumière.png"
+lumière[2] = "Images/3D/Lumière/Lumière texturé.png"
+
+let indexL = 0
+imgLumière.addEventListener("click", function(){
+    indexL ++
+    imgLumière.src = lumière[indexL]
+    if(indexL ===2){
+        indexL = 0
+    }
+})
+
 lumière.addEventListener("click",function() {
     if (lumière.src === "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Structure%20Lumi%C3%A8re.png"){
         lumière.src = "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D/Lumi%C3%A8re/Mod%C3%A9lisation%20Lumi%C3%A8re.png"
@@ -81,8 +104,8 @@ sword.addEventListener("click",function() {
         sword.src = "http://127.0.0.1:5500/Devoir%20%C3%A0%20rendre/Images/3D//Ep%C3%A9e/Ep%C3%A9e%20structure.png"
     }
 })
-*/
 
+*/
 
 
 const rbw = document.querySelector("#rainbow")
@@ -106,3 +129,14 @@ document.addEventListener("keypress",spaceBar =>{
         space.style.backgroundColor = color
     }
 })
+
+const button = document.querySelector("#btn");
+const paragraphs = document.querySelectorAll('div p');
+console.log(paragraphs);
+
+button.addEventListener("click", function() {
+  for (let i = 0; i < 6; i += 1) {
+    paragraphs[i].classList.toggle("animateText");
+}  
+})
+
